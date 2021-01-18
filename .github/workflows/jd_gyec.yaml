@@ -27,7 +27,7 @@ jobs:
                   npm install
             - name: "运行 【工业品爱消除】"
               run: |
-                  node executeOnce.js
+                  node onlyOneExecute.js
               env:
                   JD_COOKIE: ${{ github.event.client_payload.JD_COOKIE || secrets.JD_COOKIE }}
                   JD_DEBUG: ${{ github.event.client_payload.JD_DEBUG || secrets.JD_DEBUG }}
