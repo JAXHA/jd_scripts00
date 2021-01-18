@@ -10,7 +10,7 @@ on:
     watch:
         types: [started]
     repository_dispatch:
-        types: jx_sign
+        types: jd_gyec
 
 jobs:
     build:
