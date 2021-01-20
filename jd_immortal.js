@@ -312,7 +312,7 @@ function shareCodesFormat() {
   })
 }
 function requireConfig() {
-  return new Promise(async resolve => {
+  return new Promise(resolve => {
     console.log(`开始获取${$.name}配置文件\n`);
     //Node.js用户请在jdCookie.js处填写京东ck;
     let shareCodes = []
@@ -331,7 +331,7 @@ function requireConfig() {
           $.shareCodesArr.push(shareCodes[item])
         }
       })
-      $.cor = process.env.JD_IMMORTAL_LATLON?JSON.parse(process.env.JD_IMMORTAL_LATLON):(await getLatLng())
+      $.cor = process.env.JD_IMMORTAL_LATLON?JSON.parse(process.env.JD_IMMORTAL_LATLON):{}
     }else{
       $.cor = $.getdata("IMMORTAL_LATLON")?JSON.parse($.getdata("IMMORTAL_LATLON")):{}
     }
