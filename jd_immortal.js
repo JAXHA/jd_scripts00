@@ -317,11 +317,11 @@ function requireConfig() {
     //Node.js用户请在jdCookie.js处填写京东ck;
     let shareCodes = []
     console.log(`共${cookiesArr.length}个京东账号\n`);
-    if ($.isNode() && process.env.JDSXSY_SHARECODES) {
-      if (process.env.JDSXSY_SHARECODES.indexOf('\n') > -1) {
-        shareCodes = process.env.JDSXSY_SHARECODES.split('\n');
+    if ($.isNode() && process.env.JDNIAN_SHARECODES) {
+      if (process.env.JDNIAN_SHARECODES.indexOf('\n') > -1) {
+        shareCodes = process.env.JDNIAN_SHARECODES.split('\n');
       } else {
-        shareCodes = process.env.JDSXSY_SHARECODES.split('&');
+        shareCodes = process.env.JDNIAN_SHARECODES.split('&');
       }
     }
     $.shareCodesArr = [];
