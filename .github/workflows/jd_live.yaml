@@ -3,7 +3,7 @@ name: 京东直播
 on:
     workflow_dispatch:
     schedule:
-        - cron: "30 16-18 * * *"
+        - cron: "10-20/5 12 * * *"
     watch:
         types: [started]
     repository_dispatch:
