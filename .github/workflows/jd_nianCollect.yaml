@@ -1,9 +1,9 @@
-name: 京东收🧨
+name: 京东收炮
 
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 8,9,10 * * *"
+        - cron: "20 * * * *"
     watch:
         types: [started]
     repository_dispatch:
@@ -22,7 +22,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: "运行 【京东收🧨】"
+            - name: "运行 【京东收炮】"
               run: |
                   node jd_nianCollect.js
               env:
