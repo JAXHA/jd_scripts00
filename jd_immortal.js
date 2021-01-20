@@ -331,7 +331,7 @@ function requireConfig() {
           $.shareCodesArr.push(shareCodes[item])
         }
       })
-      $.cor = process.env.JD_IMMORTAL_LATLON?JSON.parse(process.env.JD_IMMORTAL_LATLON):(await getLatLng())
+      $.cor = process.env.JD_IMMORTAL_LATLON?JSON.parse(process.env.JD_IMMORTAL_LATLON):{await getLatLng()}
     }else{
       $.cor = $.getdata("IMMORTAL_LATLON")?JSON.parse($.getdata("IMMORTAL_LATLON")):{}
     }
