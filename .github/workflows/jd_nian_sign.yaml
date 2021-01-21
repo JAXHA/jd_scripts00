@@ -6,7 +6,7 @@ name: 京东炸年兽签到任务2021-1-18至2021-2-11
 on:
     workflow_dispatch:
     schedule:
-        - cron: "1 8,12,18 * * *"
+        - cron: "30 8 * * *"
     watch:
         types: [started]
     repository_dispatch:
